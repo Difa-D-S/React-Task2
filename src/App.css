@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.task2{
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.inputAdd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputAdd input{
+  width: 500px;
+  height: 40px;
+  border-radius: 8px 0px 0px 8px;
+  padding: 10px;
+}
+
+.inputAdd button{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 8px 8px 0px;
+  border:none;
+  background-color: rgb(0, 72, 255);
+  color: white;
+}
+
+.inputAdd button:hover{
+  opacity: 0.8;
+}
+
+
+
+/* ----------------show task------------------------ */
+
+.task-list{
+  border: 6px solid black;
+  padding: 15px;
+}
+
+.task-count{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.count{
+  border-radius: 50px;
+  background-color: gray;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.ClearAll{
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border:none;
+  background-color: rgb(0, 72, 255);
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0px !important;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 15px;
+  width: 500px;
+}
+
+.row{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.completed{
+  border-color: darkgreen;
+}
+.incompleted{
+  border-color: darkred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
