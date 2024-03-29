@@ -37,7 +37,7 @@ const ShowTask = ({tasklist, setTasklist, setTask}) => {
                   <li className='list mt-3' key={todo.id}>
                   
                   <div>
-                    <span>{todo.name}</span> <input type='checkBox' onChange={() => checkBox(todo.id)}/> <br></br>
+                    <span>{todo.name}</span> <input type='checkBox' checked={todo.complete} onChange={() => checkBox(todo.id)}/> <br></br>
                     <span>{todo.time}</span>
                   </div>
                   <div>

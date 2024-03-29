@@ -1,15 +1,18 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import AddTask from './components/AddTask';
 import Footer from './components/Footer';
 import ShowTask from './components/ShowTask';
 
 const App = () => {
-  const [tasklist, setTasklist] = useState([]);
+  const [tasklist, setTasklist] = useState(JSON.parse(localStorage.getItem("tasklist")) || []);
   const [task, setTask ] = useState([]);
 
+  useEffect( () => {
+    localStorage.setItem("tasklist", JSON.stringify(tasklist))
+  }, [tasklist]);
 
   return (
     <>
