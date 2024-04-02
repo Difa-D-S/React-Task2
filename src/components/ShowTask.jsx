@@ -27,7 +27,7 @@ const ShowTask = ({tasklist, setTasklist, setTask}) => {
             <span className='me-3' style={{fontSize:"25px", fontWeight:'bold'}}>Task</span>
             <span className='count'>{tasklist.length}</span>
           </span>
-          <span><button className='ClearAll'>ClearAll</button></span>
+          <span><button className='ClearAll' onClick={() => setTasklist([])}>ClearAll</button></span>
         </p>        
         <ul>
           <div className='row'>

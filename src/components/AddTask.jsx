@@ -30,7 +30,8 @@ const AddTask = ({tasklist, setTasklist, task, setTask}) => {
     <section className='container'>
       <form onSubmit={handleSubmit}>
         <div className='inputAdd my-5'>
-          <input type='text' placeholder='Add Task' value={task.name || "" } onChange={(e) => setTask({...task, name: e.target.value})} autoComplete='off' maxLength="25" name="task"/>
+          <input type='text' placeholder='Add Task' name="task" value={task.name || "" } 
+              onChange={(e) => setTask({...task, name: e.target.value})} autoComplete='off' maxLength="25" />
           <button type='submit'>{task.id ? "Edit" : "Add"}</button>
         </div>
       </form>
